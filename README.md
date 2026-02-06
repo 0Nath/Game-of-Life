@@ -11,7 +11,7 @@ F reset the view and zoom.
 the GameOfLife class take 3 arguments:
 - Window dimensions (tuple)
 - Goal framerate (int)
-- Goal ticks per second (int
+- Goal ticks per second (int)
 
 # Example of utilisation
 
