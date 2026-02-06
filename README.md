@@ -13,7 +13,7 @@ the GameOfLife class take 3 arguments:
 - Goal framerate (int)
 - Goal ticks per second (int)
 
-# Example of utilisation
+### Example of utilisation
 
 ```
 from gol import GameOfLife
