@@ -160,7 +160,7 @@ class GameOfLife:
             y2 = (len(self.__grid[1]) - self.__coords[1]) / self.__zoom + self.__dimensions[1] / 2
             pygame.draw.rect(self.__screen,self.__color,(x1,y1,x2-x1,y2-y1),1)
 
-        text = self.__font.render(f"FPS: {round(self.__fps_clock.get_fps(),2)}  ticks: {round(self.__tick_clock.get_fps(),2)}  Cells: {len(self.__living_cells)}  Grid size: {len(self.__grid)}x{len(self.__grid[1])}  Generation{"" if self.__generation == 0 else "s" }: {self.__generation}", True, (0,0,0))
+        text = self.__font.render(f"FPS: {round(self.__fps_clock.get_fps(),2)}  ticks: {round(self.__tick_clock.get_fps(),2)}  Cells: {len(self.__living_cells)}  Grid size: {len(self.__grid)}x{len(self.__grid[1])}  Generation{ "" if self.__generation == 0 else "s" }: {self.__generation}", True, (0,0,0))
         self.__screen.blit(text, (10, 10))
 
     def __update__(self):
@@ -292,5 +292,4 @@ class GameOfLife:
             print(e)
 
 if __name__ == '__main__':
-
     GameOfLife((800,600),60,30)
