@@ -38,6 +38,8 @@ class GameOfLife:
                     print("\nFPS must be higher than zero.\nFPS and ticks must higher than 0.\n")
                     raise SyntaxError
             except:
+                self.__fps = 60
+                self.__ticks = 30
                 print(f"Error.\nGoal FPS set to {self.__fps}\nGoal ticks set to {self.__ticks}")
 
         if self.__fps%self.__ticks != 0:
@@ -290,4 +292,5 @@ class GameOfLife:
             print(e)
 
 if __name__ == '__main__':
-    GameOfLife((800,600),50,11)
+
+    GameOfLife((800,600),60,30)
