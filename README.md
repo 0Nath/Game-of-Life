@@ -7,6 +7,8 @@ Press space to switch between simulation and edition.
 You can display the border of generated cases by pressing G.
 F reset the view and zoom.
 
+You can press C to clear the grid and S to open the shematics menu.
+
 ## Utilisation
 the GameOfLife class take 3 arguments:
 - Window dimensions (tuple)
