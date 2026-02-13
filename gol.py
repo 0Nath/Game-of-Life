@@ -533,7 +533,7 @@ puffer1 = [
     [0, 0, 0, 0, 0, 1, 0]
 ]
 
-rake
+
 cube = [ ]
 for i in range(200):
     l = []
@@ -543,4 +543,5 @@ for i in range(200):
 shematics = {"Glider":glider , "Glider Canon":glider_canon , "Spinning thing":spinning_thing , "Puffer 1":puffer1 , "cube":cube}
 
 if __name__ == '__main__':
+
     GameOfLife((800,600),500,500,shematics,False)
